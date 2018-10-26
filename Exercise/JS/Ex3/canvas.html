@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Canvas</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="./canvas.css">
+	<script src="canvas.js"></script>
+</head>
+
+<body>
+	<canvas width="600" height="600" id="canvas">
+		<p>You need canvas!</p>
+		<p>This example requires a browser that supports the
+			<a href="http://www.w3.org/html/wg/html5/">HTML5</a>
+			&lt;canvas&gt; feature.</p>
+	</canvas>
+	<div class="formClass" style="position: absolute">
+		<label for="shapeChoice">Select Shape:</label>
+		<select id="shapeChoice">
+			<option value="None">None</option>
+			<option value="circle">Circle</option>
+			<option value="square">Square</option>
+		</select>
+		<div class="formClass">
+			<label for="heightRec">Height:</label>
+			<input id="heightRec" type="text">
+		</div>
+		<div class="formClass">
+			<label for="widthRec">Width:</label>
+			<input id="widthRec" type="text">
+		</div>
+		<div class="formClass">
+			<label for="radiusCircle">Radius:</label>
+			<input id="radiusCircle" type="text">
+		</div>
+		<button class="formClass">OK</button>
+	</div>
+</body>
+
+</html>

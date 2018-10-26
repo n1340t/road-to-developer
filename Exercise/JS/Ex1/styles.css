@@ -1,0 +1,13 @@
+#father {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin-top: 5px;
+  position: relative;
+}
+.smallDiv {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00FF00;
+}

@@ -1,0 +1,15 @@
+### October 2018
+1. Javascript Prototype. [link](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
+2. Public-key Encryption. (Vietnamese articles) [link](https://tbson.info/2016-08-01-ma-hoa-khoa-cong-khai-cho-nguoi-khong-chuyen/)
+3. How to use chrome debug tool. [link](https://medium.com/datadriveninvestor/stopping-using-console-log-and-start-using-your-browsers-debugger-62bc893d93ff)
+4. Understand Webpack HMR. [link](http://blog.jakoblind.no/webpack-hmr/)
+5. JS Object-Oriented Programming. [link](https://www.rainerhahnekamp.com/en/javascript-and-object-oriented-programming/)
+6. React Authentication. [link](https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105)
+7. Test Driven Development. [link](https://medium.com/@fagnerbrack/the-missing-practical-step-by-step-test-driven-development-a7140ca4b71)
+8. Vanilla computed properties in JS. [link](https://jeremenichelli.io/2016/04/vanilla-computed-properties/)
+9. Good React Course (Paid). [link](https://frontarm.com/courses/learn-raw-react/)
+10. Optimization in JS (The cost of JS in 2018) [link](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
+11. http://raganwald.com/ | Blog JS
+12. Debates about Blockchain's Application [link](https://hackernoon.com/ten-years-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100)
+13. Explain how JS function is called from MDN [link](https://hacks.mozilla.org/2018/10/calls-between-javascript-and-webassembly-are-finally-fast-%F0%9F%8E%89/)
+14. JavaScript Visualizer - A tool for visualizing Execution Context, Hoisting, Closures, and Scopes in JavaScript. [link](https://www.reddit.com/r/javascript/comments/9mquv1/javascript_visualizer_a_tool_for_visualizing/)
