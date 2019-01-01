@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script>
+            let xhr;
+            window.onload = function() {
+                document.getElementById('getMoreData').addEventListener('click', function(){
+                    jsonp();                    
+                });
+            }
+
+            function jsonp() {
+                let script = document.createElement('script');
+                script.src = 'http://localhost:8080?callback=processCallback';
+                document.body.appendChild(script);
+            }
+
+            function processCallback(data){
+                process(data);
+            }
+
+            function process(newObject) {
+                let objContainer = document.getElementById('jsonObject');
+                
+                let prop;
+                objContainer.appendChild(newLI(newObject));
+            }
+            
+			function newLI(obj) {
+				let li = document.createElement('li');
+				li.innerHTML = obj.name+" is "+obj.age+" years old";
+				return li;
+			}
+        </script>
+    </head>
+    <body>
+        <button id="getMoreData">Get More Data</button>
+		<ul id="jsonObject"></ul>
+ </body>
+</html>

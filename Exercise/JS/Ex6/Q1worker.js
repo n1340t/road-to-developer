@@ -2,7 +2,7 @@ onmessage = workerCheckSquare;
 function checkSquareNumber(data) {
   let countSquare = 0;
   for (let i = 0; i < data.length; i++) {
-    if (Math.sqrt(data[i]) % 1 === 0) {
+    if (Math.sqrt(data[i+2]) % 1 === 0) {
       countSquare++;
     }
   }

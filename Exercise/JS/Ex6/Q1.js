@@ -72,7 +72,7 @@ window.onload = function() {
   function getBlockData(blockIndex) {
     return ARRAY.slice(
       blockIndex * blockLength,
-      (blockIndex + 1) * blockLength
+      (blockIndex + 1) * blockLength - 1
     );
   }
   function runWorker(idx) {
@@ -89,6 +89,7 @@ window.onload = function() {
             worker: idx
           });
         } else {
+          // terminate worker missing
           workerArray[idx].terminate();
           outputCount(resultCount);
         }
@@ -98,7 +99,7 @@ window.onload = function() {
     };
   }
   // Initialize onmessage
-  for (let i = 0; i < workerArray.length; ++i) {
+  for (let i = 0; i < workerArray.length; i++) {
     runWorker(i);
   }
 
