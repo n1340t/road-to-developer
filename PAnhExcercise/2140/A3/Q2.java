@@ -1,5 +1,6 @@
 public class Q2 {
   public static void main(String[] args) {
+    System.out.println("Helllllo");
     LinkedList shifts = new LinkedList();
     shifts.insert(1);
     shifts.insert(2);
@@ -44,7 +45,7 @@ public class Q2 {
 class CircularLinkedList {
   protected Node head;
 
-  public LinkedList() {
+  public CircularLinkedList() {
     head = null;
   }
 
