@@ -51,6 +51,12 @@ class BST:
       print('key', node)
       self.inOrderTraversal(node.right)
 
+  def preOrderTraversal(self, node):
+    if node is not None:
+      print('key', node)
+      self.preOrderTraversal(node.left)
+      self.preOrderTraversal(node.right)
+
   def isBST(self, root, min_node, max_node):
     if root is None: return True
     if min_node is not None and root.key <= min_node.key: return False
@@ -78,6 +84,4 @@ tree.insert(7)
 tree.insert(2)
 tree.insert(1)
 tree.insert(4)
-# tree.inOrderTraversal(tree.root)
-res = tree.isBSTv2(tree.root, None, None)
-print(res)
+print(tree.serialize(tree.root))
