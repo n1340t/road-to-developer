@@ -4,3 +4,4 @@ Sunday March 01 2020: Not starting Codechef yet... :(
 Sunday March 28 2021: Studying for online assestment
 Sat April 03 2021: Studying Binary Search Tree
 Thurs April 08 2021: Failed
+SUn April 11 2021: Learning - MIT Intro to Algorithm

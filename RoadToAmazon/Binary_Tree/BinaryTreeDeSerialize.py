@@ -32,6 +32,12 @@ class BST:
       self.preOrder(root.left)
       self.preOrder(root.right)
 
+  def postOrder(self, root):
+    if root is not None:
+      self.postOrder(root.left)
+      self.postOrder(root.right)
+      print(root)
+
   def levelOrder(self, root):
     queue = deque()
     queue.append(root)
@@ -49,5 +55,7 @@ tree.insert(tree.root, 7)
 tree.insert(tree.root, 2)
 tree.insert(tree.root, 1)
 tree.insert(tree.root, 4)
+tree.insert(tree.root, 6)
+tree.insert(tree.root, 8)
 
-tree.levelOrder(tree.root)
+tree.postOrder(tree.root)
