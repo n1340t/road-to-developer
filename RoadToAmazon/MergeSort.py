@@ -33,9 +33,6 @@ def merge(listA, temp, mid, lo, hi):
   for k in range(lo, hi + 1):
     listA[k] = temp[k]
 
-def mergeSortV2(listA, aux, lo, hi):
-  if hi <= lo: return
-
 listA = [93, 52, 56, 145, 188, 192, 9, 16]
 temp = [None] * len(listA)
 mergeSort(listA, temp, 0 , len(listA) - 1)
