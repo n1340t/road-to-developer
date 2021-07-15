@@ -16,33 +16,31 @@ priceofTops = [1,2]
 
  Reference:
  https://www.geeksforgeeks.org/amazon-interview-experience-for-software-development-engineer-ii/
+ https://www.geeksforgeeks.org/amazon-interview-experience-for-sde-2-4-years-experienced/?ref=rp
  https://leetcode.com/discuss/interview-question/1128534/amazon-oa-2021
  https://leetcode.com/discuss/interview-question/1031663/Amazon-OA
+ https://thejoboverflow.com/p/p255/
 '''
 
 # This simliar to 4 sum II problem
 def getNumberOfOptions(priceOfJeans: list, priceOfShoes:list, priceOfSkirts: list, priceOfTops: list, budget: int) -> int:
-  jeans_and_shoes = {}
-  for jean in priceOfJeans:
-    for shoe in priceOfShoes:
-      _total = jean + shoe
-      if jeans_and_shoes.get(_total):
-        continue
-      else:
-        jeans_and_shoes[_total] = _total
-
-  skirt_and_top = {}
+  memory1 = [x + y for x in priceOfJeans for y in priceOfShoes]
+  memory2 = [x + y for x in priceOfSkirts for y in priceOfTops]
+  memory1.sort()
+  memory2.sort()
   count = 0
-  for skirt in priceOfSkirts:
-    for top in priceOfTops:
-      _total = budget - skirt - top
-      if _total
-  print(jeans_and_shoes)
-  return 0
+  j = len(memory2) - 1
+  for x in memory1:
+    while (j >= 0 and x + memory2[j]) > budget:
+      j -= 1
+    count += j + 1 #plus 1 because j is currently an index, if we want to use j as counter, need plus 1
+  
+  return count
 
 priceOfJeans = [2,3]
 priceOfShoes = [4]
 priceOfSkirts = [2,3]
 priceOfTops = [1,2]
-budget = 6
-getNumberOfOptions(priceOfJeans, priceOfShoes, priceOfSkirts, priceOfTops, budget)
+budget = 12
+count = getNumberOfOptions(priceOfJeans, priceOfShoes, priceOfSkirts, priceOfTops, budget)
+print(count)
