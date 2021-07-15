@@ -1,9 +1,0 @@
-http://www-cs.ccny.cuny.edu/~wolberg/capstone/intersection/Intersection%20point%20of%20two%20lines.html
-https://www.codeproject.com/Tips/862988/Find-the-Intersection-Point-of-Two-Line-Segments
-https://www.geeksforgeeks.org/check-if-two-given-line-segments-intersect/
-https://cp-algorithms.com/geometry/segments-intersection.html
-https://blogs.sas.com/content/iml/2018/07/09/intersection-line-segments.html
-https://algs4.cs.princeton.edu/93intersection/
-https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/
-https://www.kite.com/python/answers/how-to-check-if-two-line-segments-intersect-in-python
-http://page.mi.fu-berlin.de/panos/cg13/l03.pdf
