@@ -1,0 +1,2 @@
+We can evaluate the condition (if) first then add/remove element later. It isn't necessary to add/remove element then do if check (Inversion of Control) 
+Example: building smallest integer from string  by removing digits problem
