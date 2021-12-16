@@ -93,8 +93,6 @@ def reversePrint(head):
     current_node = head
     while current_node.next is not None:
         current_node = current_node.next
-        
-    
 
 
 llist = SingleLinkedList()
