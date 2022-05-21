@@ -33,19 +33,6 @@ class SingleLinkedList:
         for x in self:
             print(x)
 
-
-def find_max_of_first_last(head):
-    pass
-
-
-ll = SingleLinkedList()
-ll.insert_node(1)
-ll.insert_node(4)
-ll.insert_node(3)
-ll.insert_node(2)
-ll.print_nodes()
-
-
 def passwordStrength(password):
     last = {chr(97 + i): -1 for i in range(26)}
     ret = 0
