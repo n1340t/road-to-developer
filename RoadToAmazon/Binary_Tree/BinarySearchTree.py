@@ -23,7 +23,7 @@ class BST:
         if x.right is None: return x
         else: x = x.right
       else: return x
-
+  # tail call recursive
   def searchV2(self, node, key):
     if node.key == key:
       return node

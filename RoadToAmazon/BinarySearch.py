@@ -24,6 +24,18 @@ def binarySearchV2(list, key, left, right):
       return mid
   return -1
 
-list = [1,2,3,4,5,6]
-res = binarySearch(list, 6, 0, len(list) - 1)
+def binarySearchV3(list1, key=4):
+  i, j = 0, len(list1)
+  while(i != j):
+    m = i + (j - i) //2
+    if list1[m] <= key:
+      i = m + 1
+    else:
+      j = m
+  if list1[i - 1] == key:
+    return i - 1
+  return -1
+
+list1 = [2,3,4]
+res = binarySearchV3(list1, 5)
 print('Position', res)
