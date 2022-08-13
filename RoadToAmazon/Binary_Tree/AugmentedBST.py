@@ -51,7 +51,7 @@ class BST:
       return
     self.inOrder(root.left)
     print(root, root.lCount)
-    self.inOrder(root.right)
+    return self.inOrder(root.right)
 
 if __name__ == '__main__':
   tree = BST()
@@ -63,5 +63,5 @@ if __name__ == '__main__':
   tree.insert(tree.root, 10)
   tree.insert(tree.root, 14)
   tree.inOrder(tree.root)
-  print(tree.select(tree.root, 1))
-  print(tree.unrank(tree.root, 1))
+  # print(tree.select(tree.root, 1))
+  # print(tree.unrank(tree.root, 1))

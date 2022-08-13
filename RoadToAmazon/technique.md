@@ -8,3 +8,8 @@ Example: building smallest integer from string  by removing digits problem
  - Optimize solution 
 
 A lot problems are based on properties and characteristic trivial result. Like an ordered list. For example, [0,3,5,7,11,12]. [0,3] [5,7] [11,12] can be think of time interval and the question is that can we attend all intervals? The technique: try to SORT first O(nlogn)
+
+If we want to find element in array, think of binary search first because it's fastest O(log n)
+
+Important mindset when working with recursive algorithm (usually tree algo):
+- The actual execuation starts at the end of tree (stack)
