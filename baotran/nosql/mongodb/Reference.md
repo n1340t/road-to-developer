@@ -1,0 +1,1 @@
+Reference trong MongoDB khá giống với object reference trong programming, tức là dùng để trỏ tới một document khác. 
