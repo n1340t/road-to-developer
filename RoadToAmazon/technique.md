@@ -13,3 +13,7 @@ If we want to find element in array, think of binary search first because it's f
 
 Important mindset when working with recursive algorithm (usually tree algo):
 - The actual execuation starts at the end of tree (stack)
+
+### Binary Tree technique
+1. inOrder, preOrder, postOrder (recursion)
+2. Level Order: using queue to implement.
