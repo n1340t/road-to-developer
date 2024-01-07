@@ -16,6 +16,9 @@ def twoSum3(arr: list[int], k: int) -> bool:
 def twoSum4(arr: list[int], k: int) -> bool:
   pass
 
+def prefixSum(arr: list[int]) -> list[int]:
+  pass
+
 def binarySearch(arr: list[int], k: int):
   pass
   

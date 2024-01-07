@@ -8,26 +8,34 @@ class Node:
 
 class SingleLinkedList:
     def __init__(self):
-        self.head = None
+        self.head = Node(None)
 
     def __iter__(self):
-        node = self.head
+        node = self.head.next
         while node is not None:
             yield node
             node = node.next
 
-    def insert_node(self, data: int):
-        node = Node(data)
-        if (self.head is None):
-            self.head = node
-            return
-
+    def insert_node(self, data: int) -> Node:
         current_node = self.head
         while current_node.next is not None:
             current_node = current_node.next
         
-        current_node.next = node
+        current_node.next = Node(data)
+        return current_node.next
     
+    def insertNodeRecursive(self, node, data: int) -> Node:
+        if node is None:
+            return Node(data)
+        node.next = self.insertNodeRecursive(node.next, data)
+        return node
+    
+    def insertNodeRecursiveV2(self, node, data: int) -> Node: 
+        if node.next is None:
+            node.next = Node(data)
+            return node.next
+        return self.insertNodeRecursiveV2(node.next, data)
+
     def insertNodeAtPosition(self, data, position):
         node = Node(data)
         if position == 0:
@@ -99,4 +107,7 @@ llist = SingleLinkedList()
 llist.insert_node(16)
 llist.insert_node(13)
 llist.insert_node(7)
-reversePrint(llist.head)
+llist.insertNodeRecursive(llist.head, 10)
+llist.insertNodeRecursiveV2(llist.head, 20)
+for node in llist:
+    print(node)
