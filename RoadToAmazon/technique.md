@@ -17,3 +17,6 @@ Important mindset when working with recursive algorithm (usually tree algo):
 ### Binary Tree technique
 1. inOrder, preOrder, postOrder (recursion)
 2. Level Order: using queue to implement.
+
+### Recursion problems
+- If you think a problem is a recursive type, express it as **recurrence relation**
